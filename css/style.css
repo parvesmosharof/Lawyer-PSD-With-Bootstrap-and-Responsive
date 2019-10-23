@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+
+body{
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+/*=================== common css =========================*/
+p{
+    font-size: 14px;
+    color: #b0b0b1;
+    font-family: 'Open Sans', sans-serif;
+}
+h2{
+    font-size: 36px !important;
+    color: #204f87;
+    margin: 30px 0px !important;
+    font-weight: 600 !important;
+    position: relative;
+    text-transform: uppercase;
+}
+h2::before{
+	content: '';
+	position: absolute;
+	height: 5px;
+	width: 65px;
+	left: 0;
+	top: -30px;
+	background: #f2622c;
+	display: block;
+	transition-duration: 0.7s;
+}
+h2:hover::before{
+	opacity: 0;
+	left: 100px;
+}
+
+.link{
+    font-size: 18px !important;
+    color: #f2622c;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 30px 0px !important;
+    display: block;
+}
+.link:hover{
+	text-decoration: none;
+}
+/*===================== header area =====================*/
+header
+{
+	background: #fff;
+}
+.navbar{
+	padding: 30px 0px !important;
+}
+.navbar a:hover{
+	color: #f2622c !important;
+}
+.navbar-brand {
+    font-size: 30px !important;
+    color: #28377e !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.navbar-toggler .fa
+{
+	color: #2a5ea4;
+	font-size: 18px !important;
+}
+
+
+.navbar-nav .nav-link {
+    color: #204f87 !important;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: end;
+}
+.navbar-nav .nav-link:hover {
+	color: #f2622c !important;
+}
+
+
+/*=================== Banner Section ==============================*/
+.banner-section{
+    position: relative;
+    overflow: hidden;
+}
+.banner-section h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 65px;
+    text-transform: uppercase;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.banner-section a{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+.orangebanner{
+	position: absolute;
+	width: 55%;
+	top: 0;
+	left: 0;
+}
+
+
+/*======================= about-section ======================*/
+.about-section{
+    padding: 117px 0px;
+}
+.about-content h2{}
+/*====================== feature-section ===================*/
+.feature-section{
+	background-color: #f7f8f8;
+	padding: 70px 0px 40px;
+	background-image: url(../images/featurebg.png);
+	background-repeat: no-repeat;
+	background-position: 370px 200px;
+}
+.feature-section .col-xl-4{
+	padding: 10px !important;
+}
+.feature-section h2{
+    text-align: center;
+    margin-bottom: 70px !important;
+}
+.feature-section h2::before{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.feature{
+    position: relative;
+    margin-bottom: 50px;
+}
+.feature img{
+    width: 100%;
+}
+.feature h5{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    color: #fff;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    min-width: 254px;
+    z-index: 1;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+.feature:hover h5{
+	opacity: 1;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.feature i{
+    position: absolute;
+    bottom: 25px;
+    left: 40%;
+    color: #fff;
+    font-size: 26px;
+    z-index: 1;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+.feature:hover i{
+	opacity: 1;
+	left: 50%;
+}
+.feature::after{
+	content: "";
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7f7f7+0,28377e+57,28377e+57,28377e+77&0+0,0.68+73 */
+	background: -moz-linear-gradient(top, rgba(247,247,247,0) 0%, rgba(40,55,126,0.53) 57%, rgba(40,55,126,0.68) 73%, rgba(40,55,126,0.68) 77%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(247,247,247,0) 0%,rgba(40,55,126,0.53) 57%,rgba(40,55,126,0.68) 73%,rgba(40,55,126,0.68) 77%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(247,247,247,0) 0%,rgba(40,55,126,0.53) 57%,rgba(40,55,126,0.68) 73%,rgba(40,55,126,0.68) 77%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f7f7f7', endColorstr='#ad28377e',GradientType=0 ); /* IE6-9 */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	transition-duration: 0.5s;
+}
+
+.feature:hover::after{
+	height: 100%;
+}
+
+/*================= attorneys-section =================*/
+.attorneys-section{
+	background:url(../images/attonybg.png);
+	background-repeat: no-repeat;
+	padding: 120px 0px;
+}
+.attorneys-section .col-xl-4{
+	padding-top: 100px !important;
+	padding-right: 30px;
+}
+.attorneys-section h2{
+	color: #fff;
+}
+.attorneys{
+    position: relative;
+    margin: 20px 8px;
+}
+.attorneys-section .col-xl-6{
+	padding-left: 5px !important;
+}
+.attorneys::after{
+	content: "";
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f7f7f7+0,28377e+57,28377e+57,28377e+77&0+0,0.68+73 */
+	background: -moz-linear-gradient(top, rgba(247,247,247,0) 0%, rgba(40,55,126,0.53) 57%, rgba(40,55,126,0.68) 73%, rgba(40,55,126,0.68) 77%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(247,247,247,0) 0%,rgba(40,55,126,0.53) 57%,rgba(40,55,126,0.68) 73%,rgba(40,55,126,0.68) 77%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(247,247,247,0) 0%,rgba(40,55,126,0.53) 57%,rgba(40,55,126,0.68) 73%,rgba(40,55,126,0.68) 77%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f7f7f7', endColorstr='#ad28377e',GradientType=0 ); /* IE6-9 */
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	transition-duration: 0.5s;
+}
+.attorneys:hover::after{
+	height: 100%;
+}
+.attorneys img{}
+.attorneys h6{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	color: #fff;
+	font-size: 24px;
+	font-weight: 600;
+	min-width: 254px;
+	z-index: 1;
+	opacity: 0;
+	transition-duration: 0.5s;
+	line-height: 1.7;
+}
+.attorneys:hover h6{
+	opacity: 1;
+	bottom: 10%;
+}
+
+
+/*================== languages-section ================*/
+.languages-section{
+	padding: 120px 0px;
+}
+.languages-section h2{
+	text-align: center;
+    margin-bottom: 70px !important;
+}
+
+.languages-section h2::before{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.languages-section h4{
+    font-size: 24px !important;
+    color: #28377e;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+
+  
+/*====================== contact-section =============== */
+
+.contact-section{
+    background: #28377e;
+    padding: 70px 0px;
+}
+.contact-section h2{
+	text-align: center;
+	margin-bottom: 70px !important;
+	color: #fff;
+}
+.contact-section h2::before{
+	left: 50%;
+    transform: translateX(-50%);
+}
+.form-group{}
+.form-group .form-control{
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #4759a7;
+    color:#fff !important;
+}
+.form-control:focus {
+    background-color: transparent !important;
+    box-shadow: 0 0 0 0 rgba(0, 123, 255, 0) !important;
+    border-color: #4759a7 !important;
+}
+.btn-custom{
+	background: #f2622c !important;
+	color: #fff !important;
+	padding: 10px 60px !important;
+	text-transform: uppercase;
+	font-weight: 600 !important;
+	border-radius: 0 !important;
+	transition-duration: 0.5s;
+}
+.btn-custom:hover{
+	background: #6610f2  !important;
+}
+::placeholder{
+	color: #fff !important;
+	font-size: 14px !important;
+}
+
+
+
+/*============= footer ======================*/
+footer{
+  background: #0c1234 !important;
+  padding: 40px 0px;
+ }
+footer p{
+	margin-bottom: 0px !important;
+	font-size: 14px;
+	color: #616ca8;
+}
+
+footer .nav{}
+footer .nav li{
+}
+footer .nav li a{
+    font-size: 18px;
+    color: #b1b8dd;
+    padding: 0px 20px;
+}
+footer .nav li a:hover{
+	color:  #f2622c  !important;
+}
